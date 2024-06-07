@@ -4,6 +4,7 @@ import axios from "axios";
 function TableList() {
   const [dataList, setDataList] = useState([]);
   const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl2 = process.env.REACT_APP_ENDPOINT_URL;
 
   useEffect(() => {
     const data = async () => {
@@ -67,7 +68,7 @@ function TableList() {
                                 >
                                   <img
                                     className="w-full h-full rounded-lg"
-                                    src={apiUrl + url}
+                                    src={apiUrl2 + url}
                                     alt="image"
                                   />
                                 </div>
