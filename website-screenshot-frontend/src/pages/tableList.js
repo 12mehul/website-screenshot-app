@@ -8,7 +8,7 @@ function TableList() {
   useEffect(() => {
     const data = async () => {
       try {
-        const result = await axios.get(apiUrl + "/api/users/list");
+        const result = await axios.get(apiUrl + "/users/list");
         setDataList(result.data.users);
       } catch (err) {
         console.log(err.message);

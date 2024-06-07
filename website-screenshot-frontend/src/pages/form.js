@@ -19,7 +19,7 @@ const PageForm = () => {
 
   const handleSubmit = (values, { resetForm }) => {
     axios
-      .post(apiUrl + "/api/users/form", values)
+      .post(apiUrl + "/users/form", values)
       .then((res) => {
         resetForm();
       })
